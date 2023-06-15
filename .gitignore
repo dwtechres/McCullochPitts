@@ -1,0 +1,5 @@
+# Ignore model.png file
+model.png
+
+# Ignore __pycache__ directory
+__pycache__/

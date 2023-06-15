@@ -6,13 +6,13 @@ import model
 if __name__ == "__main__":
 	# Define the input data (x_train) and corresponding output labels (y_train) for the AND function
 	x_train = numpy.array([[0, 0], [0, 1], [1, 0], [1, 1]], dtype=numpy.float32)
-	y_train = numpy.array([[0], [0], [0], [1]], dtype=numpy.float32)
+	y_train = numpy.array([[0], [1], [1], [1]], dtype=numpy.float32)
 
 	# Define the weights for the McCullochPitts layer
-	weights = numpy.array([[1], [1]], dtype=numpy.float32)
+	weights = numpy.array([[3], [3]], dtype=numpy.float32)
 
 	input = tensorflow.keras.Input(shape=(2,))
-	mcp = model.McCullochPitts(units=1, theta=2, weights=weights)(input)
+	mcp = model.McCullochPitts(units=1, theta=3, weights=weights)(input)
 	model = tensorflow.keras.Model(inputs=input, outputs=mcp)
 
 	# Compile and train the model
