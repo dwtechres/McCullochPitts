@@ -37,4 +37,4 @@ Specify the license under which your project is released. Include any disclaimer
 
 ## Contact
 
-Author: dwtecres@gmail.com
+Author: dwtechres@gmail.com
