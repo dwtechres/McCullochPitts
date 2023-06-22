@@ -3,3 +3,11 @@ model.png
 
 # Ignore __pycache__ directory
 __pycache__/
+
+# Ignore latex
+*.tex
+Pictures/
+*.synctex.gz
+*.out
+*.log
+*.aux
